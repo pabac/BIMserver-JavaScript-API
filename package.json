@@ -3,7 +3,7 @@
   "groupId": "org.opensourcebim",
   "artifactId": "javascriptapi",
   "organization": "OpenSource BIM",
-  "version": "%VERSION%",
+  "version": "1.0.0",
   "description": "A JavaScript API for the OpenSource BIMserver",
   "author": {
     "name": "Ruben de Laat",
@@ -15,7 +15,7 @@
   "files": [
     "*.js"
   ],
-  "main": "build/bimserverapi.js",
+  "main": "dist/bimserverapi.js",
   "module": "bimserverclient.js",
   "repository": {
     "type": "git",
@@ -37,12 +37,19 @@
     "babel-core": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
+    "express": "^4.16.2",
     "grunt": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-nodeunit": "*",
     "grunt-contrib-uglify": "*",
     "grunt-zip": "*",
+    "jasmine-core": "^2.8.0",
+    "karma": "^2.0.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-rollup-preprocessor": "^5.1.1",
+    "request": "^2.83.0",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.6",
