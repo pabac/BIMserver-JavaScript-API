@@ -23,4 +23,11 @@ describe("bimserverclient", function() {
         });
     });
 
+    it("should be able to upload", function () {
+        bim.checkin('topic', 'project', 'comment', 'file', 'oid', (percentage) => {}, (checkinid) => {
+            expect(checkinid).toBe("124");
+            done();
+        }, (exception) => {});
+    });
+
 });
