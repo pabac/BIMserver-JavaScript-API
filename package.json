@@ -10,7 +10,8 @@
     "email": "ruben@logic-labs.nl"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "karma start"
   },
   "files": [
     "*.js"

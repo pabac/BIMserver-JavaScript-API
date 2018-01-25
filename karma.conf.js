@@ -10,7 +10,7 @@ var BimServerMockFactory = function (config) {
 	router.post('/json', function (req, res, next) {
         return res.end(JSON.stringify({ "version": "1.0" }));
     });
-    router.post('/upload', function (req, res, next) {
+  router.post('/upload', function (req, res, next) {
         return res.end(JSON.stringify({ "checkinid": "123" }));
     });
 	return router;
